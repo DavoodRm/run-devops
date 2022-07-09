@@ -16,7 +16,7 @@ namespace Shopping.Client.Controllers
 
         public HomeController(ILogger<HomeController> logger, IHttpClientFactory httpClient)
         {
-            _logger = logger;
+            _logger = logger; 
             _httpClient = httpClient.CreateClient("ShoppingAPIClient"); ;
         }
 
