@@ -1,6 +1,6 @@
 # Deploy to Azure Kubernetes Service
 # Build and push image to Azure Container Registry; Deploy to Azure Kubernetes Service
-# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+# https://docs.microsoft.com/azure/devops/pipelines/languages/docker 
 
 trigger:
     branches:
@@ -20,7 +20,7 @@ variables:
   dockerRegistryServiceConnection: '9faaa40b-200d-48e5-a5ba-d10778141c1b'
   imageRepository: 'shoppingclient'
   containerRegistry: 'shoppingdaacr.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: 'Shopping/Shopping.Client/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'shoppingdaacr17937b61-auth'
 
